@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?Language javascript?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane fx:id="primaryStage" minHeight="400.0" minWidth="775.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <MenuBar fx:id="menu" prefHeight="25.0" prefWidth="775.0">
+      <Menu onAction="#Exit" text="Файл">
+         <MenuItem fx:id="exit" text="Выход" />
+      </Menu>
+      <Menu onAction="#About" text="Помощь">
+         <MenuItem text="Об авторе" />
+      </Menu>
+   </MenuBar>
+   <TextField fx:id="OsnovanieTopFx" prefHeight="25.0" prefWidth="350.0" promptText="Введите первое основание">
+      <FlowPane.margin>
+         <Insets left="25.0" top="40.0" />
+      </FlowPane.margin></TextField>
+   <TextField fx:id="OsnovanieBotFx" prefHeight="25.0" prefWidth="350.0" promptText="Введите второе основание">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <FlowPane.margin>
+         <Insets left="25.0" top="40.0" />
+      </FlowPane.margin>
+   </TextField>
+   <Button fx:id="AcceptTrapec" mnemonicParsing="false" onAction="#TrapecFX" text="Подтвердить">
+      <FlowPane.margin>
+         <Insets left="344.0" top="20.0" />
+      </FlowPane.margin></Button>
+   <TextField fx:id="OutputTrapec" alignment="CENTER" prefHeight="25.0" prefWidth="575.0" promptText="Полу сумма оснований трапеции">
+      <FlowPane.margin>
+         <Insets left="100.0" top="20.0" />
+      </FlowPane.margin></TextField>
+   <TextField fx:id="Height" prefHeight="25.0" prefWidth="350.0" promptText="Введите высоту">
+      <FlowPane.margin>
+         <Insets left="25.0" top="80.0" />
+      </FlowPane.margin>
+   </TextField>
+   <Button fx:id="AcceptArea" mnemonicParsing="false" onAction="#AreaFX" text="Подтвердить">
+      <FlowPane.margin>
+         <Insets left="25.0" top="80.0" />
+      </FlowPane.margin>
+   </Button>
+   <TextField fx:id="OutputArea" alignment="CENTER" prefHeight="25.0" prefWidth="575.0" promptText="Площадь трапеции">
+      <FlowPane.margin>
+         <Insets left="100.0" top="20.0" />
+      </FlowPane.margin></TextField>
+</FlowPane>
