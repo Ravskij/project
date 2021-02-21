@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?Language javascript?>
+
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
 <FlowPane fx:id="primaryStage" minHeight="400.0" minWidth="775.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <MenuBar fx:id="menu" prefHeight="25.0" prefWidth="775.0">
       <Menu onAction="#Exit" text="Файл">
